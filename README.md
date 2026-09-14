@@ -138,7 +138,7 @@ python main.py
 ## Ketahanan & Penanganan Error
 
 - **Rate limit / kredit API habis**: `sectors_get()` membedakan antara rate limit sementara (retry dengan exponential backoff) dan kredit API habis (gagal cepat, tidak retry percuma).
-- **Scheduler tangguh**: pengecekan watchlist harian membungkus setiap ticker dalam `try/except` terpisah — kegagalan pada satu ticker tidak menghentikan pengecekan ticker lainnya.
+- **Scheduler tangguh**: pengecekan watchlist harian membungkus setiap ticker dalam `try/except` terpisah  kegagalan pada satu ticker tidak menghentikan pengecekan ticker lainnya.
 
 ---
 
@@ -146,4 +146,4 @@ python main.py
 
 - Data fundamental bergantung sepenuhnya pada ketersediaan dan kelengkapan data dari Sectors API.
 - Analisis LLM dapat memiliki keterbatasan dalam menangkap konteks pasar yang sangat baru (mis. berita terkini) di luar data numerik yang diberikan.
-- Bot ini **tidak melakukan eksekusi transaksi** apa pun — murni alat bantu analisis dan pemantauan.
+- Bot ini **tidak melakukan eksekusi transaksi** apa pun, murni alat bantu analisis dan pemantauan.
