@@ -12,7 +12,7 @@ Dibangun untuk **Sectors Hackathon 2026** — Track 01: AI Agents & Assistants.
 
 Banyak investor ritel membeli saham tanpa memahami fundamentalnya, dan begitu harga turun ("nyangkut"), mereka cenderung menghindar untuk mengecek kondisinya lebih lanjut, padahal justru saat itu paling krusial untuk tahu apakah perlu *hold* (fundamental masih sehat) atau *cut loss* (fundamental memburuk). Nyangkut Doctor menjawab dua kebutuhan ini:
 
-1. **Analisis on-demand** — kirim ticker, dapat diagnosis fundamental lengkap dalam hitungan detik.
+1. **Analisis on-demand** — kirim ticker, dapat diagnosis fundamental lengkap.
 2. **Pemantauan proaktif** — daftarkan saham ke watchlist, bot akan memberi tahu secara otomatis kalau ada perubahan fundamental signifikan, tanpa perlu diminta.
 
 ---
