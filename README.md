@@ -31,7 +31,7 @@ Kirim `TICKER HARGA_BELI` (contoh: `BBRI 5200`) ke bot, dan dapatkan:
 - Radar chart visual (Value, Competitive, Financials, Future, Dividend)
 - Rekomendasi substitusi ke emiten sejenis yang lebih murah (jika valuasi mahal)
 
-![Contoh Radar Chart](docs/radar-chart-example.png)
+![Contoh Radar Chart](assets/radar-chart-example.png)
 
 #### Cara Membaca Radar Chart
 
