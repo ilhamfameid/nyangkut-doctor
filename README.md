@@ -45,7 +45,7 @@ Tiap sumbu bernilai 0–100, semakin jauh titik dari pusat, semakin kuat saham d
 | **Future** | Pertumbuhan EPS tahun berjalan vs tahun lalu | Prospek pertumbuhan laba yang kuat |
 | **Dividend** | Ada/tidaknya tag yield dividen di atas 5% (skor biner: 65 jika ada, 30 jika tidak) | Emiten memiliki riwayat dividend yield tinggi |
 
-**Contoh pembacaan:** pada chart di atas, BBRI menunjukkan **Value** dan **Competitive** yang tinggi (titik jauh dari pusat) — artinya valuasi tergolong murah dan termasuk bank besar di sektornya. **Financials** dan **Dividend** berada di level menengah, sementara **Future** adalah titik yang paling dekat ke pusat — menandakan ini kelemahan utamanya (pertumbuhan laba sedang melambat). Bentuk pentagon yang "condong" ke satu sisi seperti ini membantu investor langsung melihat di mana kekuatan dan kelemahan utama emiten tersebut, tanpa perlu membaca semua angka satu per satu.
+**Contoh pembacaan:** pada chart di atas, BBRI menunjukkan **Value** dan **Competitive** yang tinggi (titik jauh dari pusat) artinya valuasi tergolong murah dan termasuk bank besar di sektornya. **Financials** dan **Dividend** berada di level menengah, sementara **Future** adalah titik yang paling dekat ke pusat menandakan ini kelemahan utamanya (pertumbuhan laba sedang melambat). Bentuk pentagon yang "condong" ke satu sisi seperti ini membantu investor langsung melihat di mana kekuatan dan kelemahan utama emiten tersebut, tanpa perlu membaca semua angka satu per satu.
 
 > > **Catatan:** skala pada chart selalu tetap di rentang 0–100, dengan grid tiap kelipatan 20. Untuk membaca dengan cepat, fokus pada **jarak relatif tiap titik dari pusat** dibanding angka presisi pada grid.
 
