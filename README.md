@@ -8,7 +8,7 @@
 
 Dibangun untuk **Sectors Hackathon 2026** — Track 01: AI Agents & Assistants.
 
-> ⚠️ **Disclaimer:** Bot ini adalah alat bantu analisis & edukasi, bukan nasihat/rekomendasi investasi. Keputusan investasi sepenuhnya tanggung jawab pengguna.
+> ⚠️ **Disclaimer:** bot ini menganalisis kesehatan fundamental perusahaan (laba, utang, valuasi), bukan prediksi harga saham. Ini adalah alat bantu analisis dan edukasi, bukan rekomendasi investasi. Semua keputusan tetap di tangan pengguna.
 
 ---
 
