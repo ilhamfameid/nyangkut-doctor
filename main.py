@@ -109,7 +109,7 @@ def sectors_get(path: str, params: Optional[dict] = None, max_retries: int = 3) 
     raise last_error or Exception(f"Gagal setelah {max_retries} percobaan: {path}")
 
 def fetch_company(ticker: str) -> dict:
-    return sectors_get(f"/company/report/{ticker}/", {"sections": "overview,valuation,financials"})
+    return sectors_get(f"/company/report/{ticker}/", {"sections": "overview,valuation,financials,dividend"})
 
 def _run_screener(where_clause: str, limit: int) -> list:
     try:
@@ -470,7 +470,7 @@ def calculate_radar_scores(company: dict, diagnosis: str) -> dict:
     peer_pbv_avg = hist_val[-1].get("pb_peer_avg") if hist_val else None
     forward_pe = val.get("forward_pe")
     market_cap_rank = overview.get("market_cap_rank")
-    sector_tags = overview.get("tags", [])
+    
 
     eps_hist = financials.get("historical_eps", {})
     eps_years = sorted(eps_hist.keys(), reverse=True)
@@ -501,9 +501,14 @@ def calculate_radar_scores(company: dict, diagnosis: str) -> dict:
     else:
         financials_score = 50
 
-    has_dividend = "dividend-yield-ttm-above-5-percent" in sector_tags
-    dividend_score = 65 if has_dividend else 30
+    dividend_data = company.get("dividend", {})
+    yield_ttm = dividend_data.get("yield_ttm")
 
+    if yield_ttm is not None:
+     yield_pct = yield_ttm * 100  
+     dividend_score = max(10, min(100, yield_pct * 20))
+    else:
+        dividend_score = 30
     return {
         "value": round(value_score, 1),
         "competitive": round(competitive_score, 1),
