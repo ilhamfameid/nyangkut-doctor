@@ -3,6 +3,7 @@
   
   # Nyangkut Doctor
 </div>
+
 **Nyangkut Doctor** adalah bot asisten yang membantu investor ritel Indonesia yang bingung menghadapi saham rugi ("nyangkut") dengan analisis fundamental otomatis dan pemantauan berkala, sehingga keputusan hold atau cut loss didasarkan pada data.
 
 Dibangun untuk **Sectors Hackathon 2026** — Track 01: AI Agents & Assistants.
