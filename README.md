@@ -1,4 +1,4 @@
-<img src="assets/logo.png" width="140" alt="Nyangkut Doctor Logo">
+<img src="assets/logo.png" width="400" alt="Nyangkut Doctor Logo">
 
 # Nyangkut Doctor
 </div>
