@@ -557,7 +557,7 @@ def generate_radar_chart_url(ticker: str, metrics: dict) -> str:
         }
     }
 
-    url = "https://quickchart.io/chart?c=" + urllib.parse.quote(json.dumps(chart_config))
+    url = "https://quickchart.io/chart?v=4&c=" + urllib.parse.quote(json.dumps(chart_config))
     return url
 
 
