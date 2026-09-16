@@ -909,13 +909,15 @@ async def history_cmd(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = "📋 Riwayat analisis:\n\n"
     for r in records[:10]:
         date = r["created_at"][:10]
-        # Batasi diagnosis per-record biar nggak kebanjir karakter
         diag = r["diagnosis"]
-        if len(diag) > 200:
-            diag = diag[:200] + "..."
-        text += f"  {date} | {r['ticker']} | {diag}\n"
+        # Ambil cuma sampai sebelum [KONSTRUKSI METRIK] biar gak kepotong di tengah kalimat
+        cutoff_marker = "[KONSTRUKSI METRIK]"
+        if cutoff_marker in diag:
+            diag = diag.split(cutoff_marker)[0].strip() + "\n_(selengkapnya: kirim ulang ticker ini)_"
+        elif len(diag) > 300:
+            diag = diag[:300].rsplit(" ", 1)[0] + "..."
+        text += f"  {date} | {r['ticker']} | {diag}\n\n"
 
-    # Kalau total masih terlalu panjang, truncate
     if len(text) > 4000:
         text = text[:4000] + "\n\n⚠️ (Lebih banyak tersedia di /history selanjutnya)"
 
