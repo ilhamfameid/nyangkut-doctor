@@ -1,4 +1,5 @@
 <img src="assets/logo.png" width="140" alt="Nyangkut Doctor Logo">
+
 # Nyangkut Doctor
 </div>
 **Nyangkut Doctor** adalah bot asisten yang membantu investor ritel Indonesia yang bingung menghadapi saham rugi ("nyangkut") dengan analisis fundamental otomatis dan pemantauan berkala, sehingga keputusan hold atau cut loss didasarkan pada data.
