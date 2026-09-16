@@ -43,7 +43,8 @@ Tiap sumbu bernilai 0–100, semakin jauh titik dari pusat, semakin kuat saham d
 | **Competitive** | Peringkat kapitalisasi pasar (`market_cap_rank`) di sektornya | Termasuk pemain besar/dominan di sektornya |
 | **Financials** | Forward PE | Valuasi laba ke depan tergolong wajar/murah |
 | **Future** | Pertumbuhan EPS tahun berjalan vs tahun lalu | Prospek pertumbuhan laba yang kuat |
-| **Dividend** | Ada/tidaknya tag yield dividen di atas 5% (skor biner: 65 jika ada, 30 jika tidak) | Emiten memiliki riwayat dividend yield tinggi |
+| **Dividend** | Dividend yield TTM (trailing twelve months) dari data Sectors API, diskalakan ke rentang 0–100 | Emiten memiliki yield dividen yang tinggi secara historis |
+> Untuk emiten yang datanya belum tersedia di Sectors API, skor Dividend menggunakan nilai fallback default.
 
 **Contoh pembacaan:** pada chart di atas, BBRI menunjukkan **Value** dan **Competitive** yang tinggi (titik jauh dari pusat) artinya valuasi tergolong murah dan termasuk bank besar di sektornya. **Financials** dan **Dividend** berada di level menengah, sementara **Future** adalah titik yang paling dekat ke pusat menandakan ini kelemahan utamanya (pertumbuhan laba sedang melambat). Bentuk pentagon yang "condong" ke satu sisi seperti ini membantu investor langsung melihat di mana kekuatan dan kelemahan utama emiten tersebut, tanpa perlu membaca semua angka satu per satu.
 
