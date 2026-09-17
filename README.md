@@ -161,7 +161,7 @@ python main.py
 ## Ketahanan & Penanganan Error
 
 - **Rate limit / kredit API habis**: `sectors_get()` membedakan antara rate limit sementara (retry dengan exponential backoff) dan kredit API habis (gagal cepat, tidak retry percuma).
-- **Scheduler tangguh**: pengecekan watchlist harian membungkus setiap ticker dalam `try/except` terpisah — kegagalan pada satu ticker tidak menghentikan pengecekan ticker lainnya.
+- **Scheduler tangguh**: pengecekan watchlist harian membungkus setiap ticker dalam `try/except` terpisah, kegagalan pada satu ticker tidak menghentikan pengecekan ticker lainnya.
 
 ---
 
