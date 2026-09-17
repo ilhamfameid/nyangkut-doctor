@@ -658,7 +658,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await send_radar_chart(update, ticker, radar_scores, diagnosis)
 
     # Balas hasil ke Telegram secara langsung
-    diagnosis += "\n\nDisclaimer: bukan rekomendasi investasi."
+    diagnosis += "\n\n⚠️ Disclaimer: hasil di atas (termasuk Resep Dokter) adalah observasi otomatis berbasis data historis, bukan rekomendasi/nasihat investasi. Bukan ajakan membeli, menjual, atau menahan saham tertentu."
     await update.message.reply_text(diagnosis, parse_mode=None)
 
     # Simpan ke Supabase
